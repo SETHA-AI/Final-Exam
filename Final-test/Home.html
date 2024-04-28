@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- logo -->
+    <link rel="icon" href="Etec-logo.png" />
+    <!-- link bs5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- link awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link gg font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link Css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>ETEC Center</title>
+  </head>
+
+  <body>
+    <!-- Nav Bar  -->
+    <div class="container-fluid bg-secondary px-3" id="navBar">
+      <nav class="navbar navbar-expand-lg navbar-light w-100 p-0 bg-secondary">
+        <div class="container-fluid h-100">
+          <img src="Etec-logo.png" alt="" id="img" class="logo mx-3" />
+          <a class="navbar-brand fs-4 fw-bold" href="#">ETEC Center</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse h-100"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 w-100 h-100">
+              <li class="nav-item">
+                <a class="nav-link" id="navlink" aria-current="page" href="#"
+                  >Course
+                  <span><i class="fa-solid fa-bookmark fs-6 mx-2"></i></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navlink" href="#"
+                  >Achievement
+                  <span><i class="fa-solid fa-trophy fs-6 mx-2"></i></span
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" id="navlink" href="#"
+                  >Community
+                  <span><i class="fa-solid fa-comments fs-6 mx-2"></i></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" id="navlink" class="nav-link"
+                  >Account
+                  <span><i class="fa-solid fa-user fs-6 mx-2"></i></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="#footerContainer" id="navlink" class="nav-link"
+                  >About
+                  <span
+                    ><i
+                      class="fa-solid fa-circle-exclamation fs-6 mx-2"
+                    ></i></span
+                ></a>
+              </li>
+            </ul>
+            <form class="d-flex m-3">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn text-light" type="button">
+                <i class="fa-solid fa-magnifying-glass fs-5"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Slider -->
+
+    <div class="container" id="SlideContainer">
+      <div
+        id="carouselExampleControlsNoTouching"
+        class="carousel slide h-100 w-100"
+        data-bs-touch="false"
+        data-bs-interval="false"
+      >
+        <div class="carousel-inner h-100 w-100">
+          <div class="carousel-item active w-100 h-100">
+            <img
+              src="slide1.png"
+              class="d-block w-100 h-100"
+              id="Image"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item w-100 h-100">
+            <img
+              src="slide2.png"
+              class="d-block h-100 w-100"
+              id="Image"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item w-100 h-100">
+            <img
+              src="slide3.png"
+              class="d-block h-100 w-100"
+              id="Image"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Events -->
+    <div class="container mt-5">
+      <h1 class="text-warning" id="events">Events</h1>
+    </div>
+    <div class="container mt-3" id="EventContainer">
+      <!-- Swiper -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card position-relative" style="width: 18rem">
+              <img src="shirtEtec.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem">
+              <img src="shirtEtec.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem">
+              <img src="shirtEtec.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem">
+              <img src="shirtEtec.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem">
+              <img src="shirtEtec.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem">
+              <img src="shirtEtec.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem">
+              <img src="shirtEtec.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem">
+              <img src="shirtEtec.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem">
+              <img src="shirtEtec.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem">
+              <img src="shirtEtec.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- marquee -->
+    <div class="container-fluid mt-5 bg-secondary" style="height: 280px">
+      <marquee
+        behavior="scroll"
+        direction="left"
+        scrollamount="20"
+        class="d-flex h-100"
+        style="align-items: center"
+      >
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js-square"></i>
+        <i class="fa-brands fa-react"></i>
+        <i class="fa-brands fa-vuejs"></i>
+        <i class="fa-brands fa-angular"></i>
+        <i class="fa-brands fa-node-js"></i>
+        <i class="fa-brands fa-python"></i>
+        <i class="fa-brands fa-java"></i>
+        <i class="fa-brands fa-php"></i>
+      </marquee>
+    </div>
+    <div class="container mt-5">
+      <h3 id="TIT">
+        Top Instructor <span><i class="fa-solid fa-fire mx-3"></i></span>
+      </h3>
+    </div>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="card-group">
+          <div class="card">
+            <div class="card-top text-center">
+              <h3 class="card-title pt-3">Top 3</h3>
+              <hr />
+              <p class="card-text">
+                <i class="fa-solid fa-apple-whole fs-1"></i>
+              </p>
+              <p class="card-text"><small class="text-muted">Apple</small></p>
+            </div>
+            <img
+              src="apple.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 20rem"
+            />
+          </div>
+          <div class="card">
+            <div class="card-top text-center">
+              <h3 class="card-title pt-3">Top 1</h3>
+              <hr />
+              <p class="card-text"><i class="fa-solid fa-lemon fs-1"></i></p>
+              <p class="card-text"><small class="text-muted">Lemon</small></p>
+            </div>
+            <img
+              src="lemon.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 20rem"
+            />
+          </div>
+          <div class="card">
+            <div class="card-top text-center">
+              <h3 class="card-title pt-3">Top 2</h3>
+              <hr />
+              <p class="card-text"><i class="fa-solid fa-carrot fs-1"></i></p>
+              <p class="card-text"><small class="text-muted">Carrot</small></p>
+            </div>
+            <img
+              src="carrot.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 20rem"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Student -->
+    <div class="container p-0 mt-5">
+      <h3 class="TS">
+        Top Student <span><i class="fa-solid fa-crown mx-3"></i></span>
+      </h3>
+    </div>
+    <div class="container bg-primary">
+      <hr />
+      <div class="row text-center text-white fw-bold">
+        <h3>
+          Web-Course <span><i class="fa-solid fa-globe mx-3"></i></span>
+        </h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="CR7.png" class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="CR7.png" class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="CR7.png" class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-white" />
+        <div
+          class="col-12 text-center p-2 text-light d-flex justify-content-center"
+        >
+          <h3>
+            App-Course <i class="fa-solid fa-mobile-screen-button mx-4"></i>
+          </h3>
+        </div>
+        <hr class="bg-white" />
+        <div class="col-md-4 col-sm-12">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="CR7.png" class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="CR7.png" class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="CR7.png" class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- marquee -->
+    <div class="container-fluid mt-5 bg-secondary" style="height: 280px">
+      <marquee
+        behavior="scroll"
+        direction="left"
+        scrollamount="20"
+        class="d-flex h-100"
+        style="align-items: center"
+      >
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js-square"></i>
+        <i class="fa-brands fa-react"></i>
+        <i class="fa-brands fa-vuejs"></i>
+        <i class="fa-brands fa-angular"></i>
+        <i class="fa-brands fa-node-js"></i>
+        <i class="fa-brands fa-python"></i>
+        <i class="fa-brands fa-java"></i>
+        <i class="fa-brands fa-php"></i>
+      </marquee>
+    </div>
+
+    <!-- Events -->
+    <div class="container mt-5">
+      <h1 class="text-white bg-danger" id="events">Video</h1>
+    </div>
+    <div class="container mt-3" id="EventContainer">
+      <!-- Swiper -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="position-relative" style="width: 18rem">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fweb.facebook.com%2Fkroitchetlaor%2Fvideos%2F719725086906424%2F&show_text=false&width=560&t=0"
+                width="560"
+                height="420"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowfullscreen="true"
+                class="w-100"
+              ></iframe>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="position-relative" style="width: 18rem">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fweb.facebook.com%2Fkroitchetlaor%2Fvideos%2F719725086906424%2F&show_text=false&width=560&t=0"
+                width="560"
+                height="420"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowfullscreen="true"
+                class="w-100"
+              ></iframe>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="position-relative" style="width: 18rem">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fweb.facebook.com%2Fkroitchetlaor%2Fvideos%2F719725086906424%2F&show_text=false&width=560&t=0"
+                width="560"
+                height="420"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowfullscreen="true"
+                class="w-100"
+              ></iframe>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="position-relative" style="width: 18rem">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fweb.facebook.com%2Fkroitchetlaor%2Fvideos%2F719725086906424%2F&show_text=false&width=560&t=0"
+                width="560"
+                height="420"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowfullscreen="true"
+                class="w-100"
+              ></iframe>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="position-relative" style="width: 18rem">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fweb.facebook.com%2Fkroitchetlaor%2Fvideos%2F719725086906424%2F&show_text=false&width=560&t=0"
+                width="560"
+                height="420"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowfullscreen="true"
+                class="w-100"
+              ></iframe>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="position-relative" style="width: 18rem">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fweb.facebook.com%2Fkroitchetlaor%2Fvideos%2F719725086906424%2F&show_text=false&width=560&t=0"
+                width="560"
+                height="420"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowfullscreen="true"
+                class="w-100"
+              ></iframe>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="position-relative" style="width: 18rem">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fweb.facebook.com%2Fkroitchetlaor%2Fvideos%2F719725086906424%2F&show_text=false&width=560&t=0"
+                width="560"
+                height="420"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowfullscreen="true"
+                class="w-100"
+              ></iframe>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="position-relative" style="width: 18rem">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fweb.facebook.com%2Fkroitchetlaor%2Fvideos%2F719725086906424%2F&show_text=false&width=560&t=0"
+                width="560"
+                height="420"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowfullscreen="true"
+                class="w-100"
+              ></iframe>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="position-relative" style="width: 18rem">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fweb.facebook.com%2Fkroitchetlaor%2Fvideos%2F719725086906424%2F&show_text=false&width=560&t=0"
+                width="560"
+                height="420"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowfullscreen="true"
+                class="w-100"
+              ></iframe>
+            </div>
+          </div>
+          <
+          <div class="swiper-slide">
+            <div class="position-relative" style="width: 18rem">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fweb.facebook.com%2Fkroitchetlaor%2Fvideos%2F719725086906424%2F&show_text=false&width=560&t=0"
+                width="560"
+                height="420"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowfullscreen="true"
+                class="w-100"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- Article -->
+    <div class="container d-flex justify-content-between px-5">
+      <h3 class="ArticleContainer">
+        Article <span><i class="fa-solid fa-newspaper mx-3"></i></span>
+      </h3>
+      <button type="button" class="btn btn-secondary h-25 p-3">
+        Read More
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="container" id="Article">
+        <div class="card bg-dark text-white w-75 mx-auto">
+          <img src="" class="card-img" alt="" style="height: 560px" />
+          <div class="card-img-overlay top-50">
+            <p class="card-text">
+              <small class="text-muted"
+                >Sun April 28 2024 9:18 PM 1M Views</small
+              >
+            </p>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Deserunt quos molestiae, minus saepe ipsum ducimus ea possimus!
+              Quibusdam, repudiandae natus?
+            </p>
+            <button type="button" class="btn btn-outline-secondary">
+              បន្ដការអាន
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-4">
+          <div class="card bg-dark text-white w-75 mx-auto">
+            <img src="" class="card-img" alt="" style="height: 360px" />
+            <div class="card-img-overlay top-25">
+              <p class="card-text">
+                <small class="text-muted"
+                  >Sun April 28 2024 9:18 PM 1M Views</small
+                >
+              </p>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <button type="button" class="btn btn-outline-secondary">
+                បន្ដការអាន
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card bg-dark text-white w-75 mx-auto">
+            <img src="" class="card-img" alt="" style="height: 360px" />
+            <div class="card-img-overlay top-25">
+              <p class="card-text">
+                <small class="text-muted"
+                  >Sun April 28 2024 9:18 PM 1M Views</small
+                >
+              </p>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <button type="button" class="btn btn-outline-secondary">
+                បន្ដការអាន
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card bg-dark text-white w-75 mx-auto">
+            <img src="" class="card-img" alt="" style="height: 360px" />
+            <div class="card-img-overlay top-25">
+              <p class="card-text">
+                <small class="text-muted"
+                  >Sun April 28 2024 9:18 PM 1M Views</small
+                >
+              </p>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <button type="button" class="btn btn-outline-secondary">
+                បន្ដការអាន
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card bg-dark text-white w-75 mx-auto">
+            <img src="" class="card-img" alt="" style="height: 360px" />
+            <div class="card-img-overlay top-25">
+              <p class="card-text">
+                <small class="text-muted"
+                  >Sun April 28 2024 9:18 PM 1M Views</small
+                >
+              </p>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <button type="button" class="btn btn-outline-secondary">
+                បន្ដការអាន
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card bg-dark text-white w-75 mx-auto">
+            <img src="" class="card-img" alt="" style="height: 360px" />
+            <div class="card-img-overlay top-25">
+              <p class="card-text">
+                <small class="text-muted"
+                  >Sun April 28 2024 9:18 PM 1M Views</small
+                >
+              </p>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <button type="button" class="btn btn-outline-secondary">
+                បន្ដការអាន
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card bg-dark text-white w-75 mx-auto">
+            <img src="" class="card-img" alt="" style="height: 360px" />
+            <div class="card-img-overlay top-25">
+              <p class="card-text">
+                <small class="text-muted"
+                  >Sun April 28 2024 9:18 PM 1M Views</small
+                >
+              </p>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <button type="button" class="btn btn-outline-secondary">
+                បន្ដការអាន
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid p-0 mt-5 text-white" id="footerContainer">
+      <div class="row m-0">
+        <div class="col-md-2 p-3">
+          <img
+            src="..."
+            class="rounded mx-auto d-block"
+            alt="..."
+            style="width: 40%; height: 8rem; border: 1px solid white"
+          />
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores
+            fugit dicta quia. Libero, dolorem.
+          </p>
+        </div>
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col">
+              <div class="h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Etec 1</h5>
+                  <p class="card-text">Location: 182, Phnom Penh</p>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.871954739158!2d104.88879607483032!3d11.561035888639436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095142c9bb017b%3A0x58219dd024c57ff1!2sETEC1!5e0!3m2!1sen!2skh!4v1714275528825!5m2!1sen!2skh"
+                  width="230"
+                  height="auto"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <div class="col">
+              <div class="h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Etec 2(Main office)</h5>
+                  <p class="card-text">Location: St 160, Phnom Penh</p>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.8556326600064!2d104.88793507483031!3d11.562205388638398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951adb4d4041d%3A0x8a90e729f62ad800!2sETEC2!5e0!3m2!1sen!2skh!4v1714275950977!5m2!1sen!2skh"
+                  width="230"
+                  height="autoplay"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <div class="col">
+              <div class="h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Etec 3</h5>
+                  <p class="card-text">Location: St 150, Phnom Penh</p>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.8367894149646!2d104.89054937483034!3d11.563555388637132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095191805840fd%3A0x1c8c01468d4bf1df!2sETEC3!5e0!3m2!1sen!2skh!4v1714276050339!5m2!1sen!2skh"
+                  width="230"
+                  height="auto"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3>Contact</h3>
+          <i class="fa-solid fa-mobile"> Tel:</i>
+          <p>077 358 884</p>
+          <p>096 226 884</p>
+          <i class="fa-solid fa-house-laptop"> Main Office :</i>
+          <p>https://maps.app.goo.gl/WE5a8axoaBETuaae7</p>
+          <i class="fa-solid fa-envelope-open-text"> Email :</i>
+          <p>https://maps.app.goo.gl/WE5a8axoaBETuaae7</p>
+          <i class="fa-brands fa-telegram"> Telegram</i>
+          <p>https://maps.app.goo.gl/WE5a8axoaBETuaae7</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiper", {
+      slidesPerView: 3,
+      direction: getDirection(),
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+      return direction;
+    }
+  </script>
+
+  <script src="app.js"></script>
+</html>

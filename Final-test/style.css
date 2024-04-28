@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+    /*  */
+}
+#navBar {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: .3s;
+
+} 
+
+#img{
+    width: 60px;
+    height: 60px;
+}
+
+.navbar-nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #fff; */
+}
+#navlink{
+    color: white;
+    transition: .4s;
+}
+#navlink:hover{
+    transition: .3s;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+#SlideContainer{
+    margin-top: 130px;
+    width: 100%;
+    height: 500px;
+    
+}
+
+#Image{
+    border-radius: 20px;
+    object-fit: cover;
+    
+}
+
+#events{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 80px;
+    background: orangered;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+/* Se */
+#EventContainer{
+    position: relative;
+    background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0 auto;
+      padding: 0;
+}
+.swiper {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 760px) {
+    .swiper-button-next {
+      right: 20px;
+      transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+      left: 20px;
+      transform: rotate(90deg);
+    }
+  }
+
+/* marquee */
+
+marquee i{
+    cursor: pointer;
+    margin-right: 120px;
+    font-size: 10rem;
+    transition: .3s;
+}
+
+marquee i:first-child:hover{
+    font-size: 12rem;
+    color: orangered;
+}
+
+marquee i:nth-child(2):hover{
+    font-size: 12rem;
+    color: blue;
+}
+
+marquee i:nth-child(3):hover{
+    font-size: 12rem;
+    color: yellow;
+}
+
+marquee i:nth-child(4):hover{
+    font-size: 12rem;
+    color: aqua;
+}
+
+marquee i:nth-child(5):hover{
+    font-size: 12rem;
+    color: lawngreen;
+}
+
+marquee i:nth-child(6):hover{
+    font-size: 12rem;
+    color: red;
+}
+
+marquee i:nth-child(7):hover{
+    font-size: 12rem;
+    color: lawngreen;
+}
+
+marquee i:nth-child(8):hover{
+    font-size: 12rem;
+    color: yellow;
+}
+
+marquee i:nth-child(9):hover{
+    font-size: 12rem;
+    color: gray;
+}
+
+marquee i:nth-child(10):hover{
+    font-size: 12rem;
+    color: blue;
+}
+
+#TIT{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding-left: 30px;
+    width: 360px;
+    background-color: blue;
+    color: white;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);   
+}
+
+/* Top Student */
+
+.TS{
+    
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding-left: 30px;
+    width: 360px;
+    background-color: blue;
+    color: white;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);      
+}
+
+#Article{
+    font-family: "Koulen", sans-serif;
+}
+.ArticleContainer{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding-left: 30px;
+    width: 260px;
+    background-color: grey;
+    color: white;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+#footerContainer{
+    
+    background-color: blue;
+}
